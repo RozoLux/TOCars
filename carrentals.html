@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>You don't dream</title>
 
     <!-- to include the Bootstrap CSS file in your HTML page -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -12,7 +12,14 @@
     <!--to use css stylesheet file-->
     <link rel="stylesheet" href="css/styles.css" />
 
-    <title>You don't dream</title>
+     <!--imports the Font Awesome icon library's CSS file-->
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+
+     <!-- imports the "bootstrap-social" CSS file-->   
+     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+
+    
 </head>
 
 
@@ -43,41 +50,54 @@
           </nav>
         </div>    
         
-        <h1>V12</h>
-        <div class="card-group">       
+        <h1>V12 Engine</h>
+        <div class="card-group">
+          <!--Lambo-->       
           <div class="card">        
             <img src="img/lambo1.webp" class="card-img-top " alt="lambo1">
             <div class="card-body">
               <h5 class="card-title">Aventador</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Rent it</a>
+              <p class="card-text"> Brand : Lamborghini<br>Power: 769hp<br>0 - 100 kmh : 2.9 sec<br>Top Speed : 347km/h<br>  Daily Rental Rates : $1200 </p>
+              <a href="#" class="btn btn-primary" id="rent-btn">Rent it</a>
+              <form id="rent-form" style="display: none;">
+                <div class="form-group">
+                  <label for="name">Surname:</label>
+                  <input type="text" class="form-control" id="Surname" placeholder="Enter your Surname">
+                  <label for="name">Last Name: </label>
+                  <input type="text" class="form-control" id="Last Name" placeholder="Enter your Last Name">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
             </div>        
           </div>
+           <!--Ferrari--> 
           <div class="card">
             <img src="img/ferrari1 (1).webp" class="card-img-top " alt="ferrari1">
             <div class="card-body">
               <h5 class="card-title">812 Superfast</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"> Brand : Ferrari <br>Power: 789hp<br>0 - 100 kmh : 2.9sec<br>Top Speed : 340km/h<br>  Daily Rental Rates : $1450 </p>
               <a href="#" class="btn btn-primary">Rent it</a>
             </div>        
           </div>
+           <!--Aston Martin--> 
           <div class="card">
             <img src="img/2023-aston-martin-v-12-vantage1.jpg" class="card-img-top " alt="2023-aston-martin-v-12-vantage1">
             <div class="card-body">
               <h5 class="card-title">V12 Vantage</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"> Brand : Aston Martin <br>Power: 700hp<br>0 - 100 kmh : 3.5 sec<br>Top Speed : 322km/h<br>  Daily Rental Rates :$1100 </p>
               <a href="#" class="btn btn-primary">Rent it</a>
             </div>        
           </div>    
         </div> 
-    
+        <br>
+        <br>    
         <h1>V8</h>
         <div class="card-group">  
           <div class="card">
             <img src="img/Dodge-Challenger-RT-1jpg.jpg" class="card-img-top " alt="...">
             <div class="card-body">
               <h5 class="card-title">Challenger</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"> Brand : Dodge <br>Power: 375hp<br>0 - 100 kmh : 5.1sec<br>Top Speed : 250km/h<br>  Daily Rental Rates : $600 </p>
               <a href="#" class="btn btn-primary">Rent it</a>
             </div>        
           </div>
@@ -85,7 +105,7 @@
             <img src="img/LC5001.webp" class="card-img-top " alt="...">
             <div class="card-body">
               <h5 class="card-title">LC 500</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"> Brand : Lexus <br>Power: 471hp<br>0 - 100 kmh : 4.6sec<br>Top Speed : 269km/h<br>  Daily Rental Rates : $575</p>
               <a href="#" class="btn btn-primary">Rent it</a>
             </div>        
           </div>
@@ -93,27 +113,28 @@
             <img src="img/McLaren-570S-Spider-1.jpg" class="card-img-top " alt="...">
             <div class="card-body">
               <h5 class="card-title">570 Spider</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"> Brand : McLaren  <br>Power: 562hp<br>0 - 100 kmh : 3.2sec<br>Top Speed : 328km/h<br>  Daily Rental Rates : $800</p>
               <a href="#" class="btn btn-primary">Rent it</a>
             </div>        
           </div>    
         </div> 
-    
+        <br>
+        <br>
         <h1>V6</h>
         <div class="card-group">  
           <div class="card">
             <img src="img/2017-Ford-GT-1.jpg" class="card-img-top " alt="...">
             <div class="card-body">
               <h5 class="card-title">GT </h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"> Brand : Ford <br>Power: 660hp<br>0 - 100 kmh : 3.2sec<br>Top Speed : 348km/h<br>  Daily Rental Rates : $775</p>
               <a href="#" class="btn btn-primary">Rent it</a>
             </div>        
           </div>
           <div class="card">
             <img src="img/porsche1.jpg" class="card-img-top " alt="...">
             <div class="card-body">
-              <h5 class="card-title">911</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">911 Turbo</h5>
+              <p class="card-text"> Brand : Porsche <br>Power: 640hp<br>0 - 100 kmh : 2.5sec<br>Top Speed : 330km/h<br>  Daily Rental Rates : $635</p>
               <a href="#" class="btn btn-primary">Rent it</a>
             </div>        
           </div>
@@ -121,7 +142,7 @@
             <img src="img/2021-Nissan-GT-R-NISMO-front-three-quarter2.webp" class="card-img-top " alt="...">
             <div class="card-body">
               <h5 class="card-title">GT-R Nismo</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"> Brand : Nissan <br>Power: 600hp<br>0 - 100 kmh : 3.2sec<br>Top Speed : 330km/h<br>  Daily Rental Rates : $705</p>
               <a href="#" class="btn btn-primary">Rent it</a>
             </div>        
           </div>    
@@ -220,6 +241,16 @@
           </div>
         </div>
       </footer>
+
+    <!--Event Listener for form-->
+    <script>
+      const rentBtn = document.getElementById('rent-btn');
+      const rentForm = document.getElementById('rent-form');
+  
+      rentBtn.addEventListener('click', () => {
+        rentForm.style.display = 'block';
+      });
+    </script>
     
     
     <!--to include the Bootstrap JavaScript file-->
