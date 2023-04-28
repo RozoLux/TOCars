@@ -19,7 +19,12 @@
      <!-- imports the "bootstrap-social" CSS file-->   
      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
 
-    
+    <!--Date Picker-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+     
+  
 </head>
 
 
@@ -61,10 +66,16 @@
               <a href="#" class="btn btn-primary" id="rent-btn">Rent it</a>
               <form id="rent-form" style="display: none;">
                 <div class="form-group">
-                  <label for="name">Surname:</label>
+                  <label for="Surname">Surname:</label>
                   <input type="text" class="form-control" id="Surname" placeholder="Enter your Surname">
-                  <label for="name">Last Name: </label>
-                  <input type="text" class="form-control" id="Last Name" placeholder="Enter your Last Name">
+                  <label for="LastName">Last Name: </label>
+                  <input type="text" class="form-control" id="LastName" placeholder="Enter your Last Name">
+                  <!---->
+                  <label for="datepicker-range">Date Range:</label>
+                  <input type="text" class="form-control datepicker-range" id="datepicker-range" placeholder="Select a date range">
+                  <label for="birthday">Birthday:</label>
+                  <input type="date" id="birthday" name="birthday">
+                  <!---->
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
@@ -249,6 +260,23 @@
   
       rentBtn.addEventListener('click', () => {
         rentForm.style.display = 'block';
+      });
+    </script>
+
+    <!--Date Picker-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+
+
+    <!-- Initialize the datepicker -->
+    <script>
+      $(function() {
+        $('.datepicker-range').datepicker({
+          format: 'mm/dd/yyyy',
+          autoclose: true,
+          todayHighlight: true,
+        });
       });
     </script>
     
